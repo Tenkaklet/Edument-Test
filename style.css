@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Header */
+header {
+  margin: 2.3rem auto;
+}
+
+
+
+/* File tree */
+
+#file-tree {
+    border: dotted 1px #ccc;
+    height: 30rem;
+    width: 25rem;
+    overflow: auto;
+}
+
+#file-tree p {
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+#file-tree #file-tree-list {
+  padding: .3rem;
+}
+
+ul.meta {
+  display: none;
+}
+
+ul.meta li {
+  margin-left: 1rem;
+  font-size: 0.7rem;
+}
+
+ul.active {
+  display: block;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
